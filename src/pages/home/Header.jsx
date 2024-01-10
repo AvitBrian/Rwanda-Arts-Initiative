@@ -27,6 +27,7 @@ function Header(props) {
         <img src={logoImage} width={60} height={60} alt="Logo" />
       )}
 
+
         <Typography
           component="h2"
           variant="h5"
@@ -40,24 +41,28 @@ function Header(props) {
           {title}
         </Typography>
 
-        <Button variant="outlined" size="small">
-          Log in
-        </Button>
-      </Toolbar>
-      <Toolbar
-        component="nav"
-        variant="dense"
-        sx={{ justifyContent: 'center',mx: "1rem", overflowX: 'auto' }}
-      >
-<Link
+        {
+          <Link
       color="inherit"
       noWrap
       variant="h5"
       to={isEventsPage ? '/' : '/events'}
       sx={{p:1, flexShrink: 0, fontWeight: 500, fontSize: [12, 16, 18] }}
     >
-      {isEventsPage ? 'Home' : 'Events'}
-    </Link>
+      {isEventsPage ? <Button variant="outlined" size="small">
+          Home
+        </Button> : <Button variant="outlined" size="small">
+          Events
+        </Button> }
+    </Link> 
+        }
+      </Toolbar>
+      <Toolbar
+        component="nav"
+        variant="dense"
+        sx={{ justifyContent: 'center',mx: "1rem", overflowX: 'auto' }}
+      >
+
       </Toolbar>
     </React.Fragment>
   );

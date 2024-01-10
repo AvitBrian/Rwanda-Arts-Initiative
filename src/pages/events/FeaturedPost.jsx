@@ -14,7 +14,7 @@ function FeaturedPost(props) {
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="#">
+      <CardActionArea >
       <Card sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: [200, 550, 550] }}>
   <CardMedia
     component="img"
