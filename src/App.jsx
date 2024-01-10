@@ -134,13 +134,9 @@ function App() {
       <Header title="Rwanda Arts Initiative"
         sx={"h1"} />
         <Routes>
-        <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/events" element={<Events />}></Route>
           <Route path="/checkout" element={<Checkout />}></Route>
-          <Route element={<Navigate to="/" />} />
-
-
-
         </Routes>
       </div>
       </ThemeProvider>
