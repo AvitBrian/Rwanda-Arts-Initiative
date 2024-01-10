@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react-swc'
 const ASSET_URL = process.env.ASSET_URL || '';
 
 export default defineConfig({
-  base:'/Rwanda-Arts-Initiative/',
+  base:'./',
   plugins: [react()],
 })

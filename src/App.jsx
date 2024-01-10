@@ -134,14 +134,15 @@ function App() {
       <Header title="Rwanda Arts Initiative"
         sx={"h1"} />
         <Routes>
+        <Route path="/" element={<Home />}>Home
+          </Route>
           <Route path="/events" element={<Events />}>
             Events
           </Route>
           <Route path="/checkout" element={<Checkout />}>
             Checkout
           </Route>
-          <Route path="/" element={<Home />}>Home
-          </Route>
+
 
         </Routes>
       </div>
