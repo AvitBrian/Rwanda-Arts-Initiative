@@ -6,5 +6,5 @@ const ASSET_URL = process.env.ASSET_URL || '';
 
 export default defineConfig({
   plugins: [react()],
-  base: `${ASSET_URL}/dist/`,
+  base:'/Rwanda-Arts-Initiative/',
 })
