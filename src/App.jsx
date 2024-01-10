@@ -137,6 +137,8 @@ function App() {
         <Route path="/" element={<Home />}></Route>
           <Route path="/events" element={<Events />}></Route>
           <Route path="/checkout" element={<Checkout />}></Route>
+          <Route element={<Navigate to="/" />} />
+
 
 
         </Routes>
